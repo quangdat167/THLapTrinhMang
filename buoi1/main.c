@@ -375,10 +375,10 @@ void SignInFn(Account *acc)
                         if (strcmp(cur->username, username) == 0)
                         {
                             cur->isSignIn = 1;
+                            break;
                         }
                         cur = cur->next;
                     }
-                    printf("%s\n", cur->username);
                     return;
                 }
             }
